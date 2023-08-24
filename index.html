@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Share</title>
 </head>
 
@@ -13,34 +13,34 @@
     <div class="status-bar">
         <div class="status-bar__column">
             <span>Optus</span>
-            <i class="fas fa-wifi"></i>
+            <span><i class="fas fa-wifi"></i></span>
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>100%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
+            <span><i class="fas fa-battery-full"></i></span>
+            <span><i class="fas fa-bolt"></i></span>
         </div>
     </div>
+    <main class="main-screen">
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Share</h1>
+            <h4 class="welcome-header__subtitle">If you have a Share Account, <br> log in with your email or phone
+                number.
+            </h4>
+        </header>
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Share</h1>
-        <p class="welcome-header__text">If you have a Share Account, log in with your email or phone number.</p>
-    </header>
+        <form action="friends.html" method="get" class="login-form">
+            <input class="login-form__column login-form__input-text" type="text" placeholder="Email or Phone number">
+            <input class="login-form__column login-form__input-password" type="password" placeholder="Password">
+            <button class="login-form__column login-form__btn">Log In</button>
+            <button class="login-form__column login-form__btn">Sign Up</button>
+            <a href="#" class="login-form__link">Find Share Account or Password</a>
+        </form>
 
-    <form action="friends.html" method="get" class="login-form">
-        <input type="text" placeholder="Email or Phone number">
-        <input type-="password" placeholder="Password">
-        <input type="submit" value="Log In">
-        <a href="#">Find Share Account or Password</a>
-    </form>
-
-    <div class="no-mobile">
-        <span>Your screen is too big.</span>
-    </div>
-
+    </main>
     <script src="https://kit.fontawesome.com/7c06ed28f4.js" crossorigin="anonymous"></script>
 </body>
 

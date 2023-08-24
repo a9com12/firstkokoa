@@ -1,0 +1,26 @@
+.nav {
+    position: fixed;
+    bottom:0;
+    background-color: rgba(0,0,0,0.03);
+    padding:20px 0px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-btn {
+    font-size: 38px;
+    color:var(--main-color);
+    position: relative;
+}
+
+.nav-notification {
+    font-size: 18px;
+    position:absolute;
+    bottom: 22px;
+    left:22px;
+}
