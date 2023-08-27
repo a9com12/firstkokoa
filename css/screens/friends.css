@@ -1,5 +1,5 @@
 .friends-name-display {
-    margin-top:25px;
+    margin-top:100px;
     text-align: center;
     background-color: rgba(0,0,0,0.03);
     color:var(--main-color);
@@ -13,4 +13,33 @@
  padding-top:10px;
  display: flex;
  justify-content: space-between;
+}
+
+ .friends-screen {
+    padding:0px 25px;
+}
+
+@keyframes hiddenSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    top:0;
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    font-size: 125px;
+    animation: hiddenSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 2s;
 }

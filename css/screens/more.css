@@ -1,0 +1,25 @@
+.suggestions {
+    border-top:var(--main-border);
+    padding-top: 25px;
+}
+
+.suggestions__text {
+    font-size: 19px;
+}
+
+.suggestions__icons {
+    display: flex;
+    padding-top:15px;
+}
+
+.suggestions__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right:10px;
+
+}
+
+.suggestions__icon i {
+    margin-bottom: 7px;
+}

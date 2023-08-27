@@ -2,8 +2,13 @@
     display: flex;
     justify-content: space-between;
     padding:0px 25px;
-    font-size: 20px;
-    margin-top:25px;
+    font-size: 25px;
+    margin-top:40px;
+    position: fixed;
+    top:0;
+    width:100%;
+    box-sizing: border-box;
+    background-color: white;
 }
 
 .screen-header__text {
@@ -13,4 +18,18 @@
 
 .screen-header__column:last-child span {
     margin-right: 5px;
+}
+
+@keyframes cogRotate {
+    from {
+transform: none;
+    }
+    to {
+transform: rotateZ(360deg);
+    }
+}
+
+
+.screen-header__column .fa-cog:hover {
+animation: cogRotate 1s ease-in-out infinite;
 }

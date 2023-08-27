@@ -12,9 +12,9 @@
 }
 
 .open-chat {
-
     margin-top:15px;
     color:var(--grey);
     display: flex;
     justify-content: space-between;
 }
+

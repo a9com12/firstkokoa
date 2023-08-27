@@ -1,0 +1,25 @@
+.settings-list {
+    margin-top: 15px;
+}
+
+.settings-list__column {
+    display: flex;
+    font-size: 22px;
+    border-bottom: var(--main-border);
+    padding-top:15px;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+.settings-list__column:nth-child(3) {
+    justify-content: space-between;
+}
+
+.settings-list__column:nth-child(3)
+.settings__column__right {
+color:var(--grey);
+}
+
+.settings__column__left i {
+    margin-right:15px;
+}

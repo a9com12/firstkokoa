@@ -21,8 +21,8 @@ flex-direction: column;
 
 
 .open-post__main-img {
-    width:100px;
-    height:100px;
+    width:110px;
+    height:110px;
     border-radius: 12px;
 }
 
@@ -59,4 +59,42 @@ flex-direction: column;
 
 .open-post__active {
     color:tomato;
+}
+
+.open-post__column-right {
+    position: relative;
+}
+
+
+.open-post__like {
+    position:absolute;
+    background-color: var(--grey);
+    color:white;
+    border-radius: 10px;
+    padding:3px 7px;
+    bottom:7px;
+    right:7px;
+    
+}
+
+@keyframes heartBeat {
+    0% {
+transform: none;
+color:white;
+    }
+    50% {
+        transform: scale(1.5);
+        color:tomato;
+    }
+    100% {
+        transform: none;
+        color:white;
+    }
+}
+
+
+
+.open-post__like i:hover {
+    will-change: transform;
+animation: heartBeat 1s ease-in-out infinite;
 }
