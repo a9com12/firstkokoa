@@ -3,22 +3,21 @@
 }
 
 .time-stamp {
-    width:fit-content;
     display: flex;
-    border-radius: 20px;
-    text-align: center;
-    background-color: white;
-    font-weight: bold;
-    padding:8px;
+    align-items: center;
+    justify-content: center;
+    margin-top:120px;
     margin-bottom: 20px;
 }
 
-.chat-screen .main-screen {
-    margin-top:100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.time-stamp__text {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding:8px;
 }
+
 
 .chat-screen .main-screen .status-bar,
 .chat-screen .main-screen .alt-header {
@@ -27,7 +26,6 @@
 
 .message-row {
     display: flex;
-    margin:20px;
 }
 
 .message-row__column {
